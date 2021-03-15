@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LunchPail : MonoBehaviour
+public class TextbookManager : MonoBehaviour
 {
-    public LunchPailObj lunchPail;
+    public Textbook textbook;
 
     void OnTriggerEnter(Collider other)
     {

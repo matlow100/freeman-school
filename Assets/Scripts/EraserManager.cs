@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Eraser : MonoBehaviour
+public class EraserManager : MonoBehaviour
 {
-    public EraserObj eraser;
+    public Eraser eraser;
     public CountManager countManager;
 
     void OnTriggerEnter(Collider other)
     {
-        
+
     }
 
     void OnTriggerExit(Collider other)
