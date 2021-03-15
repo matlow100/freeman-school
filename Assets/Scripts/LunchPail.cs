@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LunchPail : MonoBehaviour
 {
-    public LunchPail lunchPail;
+    public LunchPailObj lunchPail;
 
     void OnTriggerEnter(Collider other)
     {

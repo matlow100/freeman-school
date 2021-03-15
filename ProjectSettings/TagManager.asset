@@ -6,10 +6,6 @@ TagManager:
   tags:
   - projectile
   - FxTemporaire
-  - Wood
-  - Textbook
-  - LunchPail
-  - Eraser
   layers:
   - Default
   - TransparentFX

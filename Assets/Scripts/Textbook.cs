@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Textbook : MonoBehaviour
 {
-    public Textbook textbook;
+    public TextbookObj textbook;
 
     void OnTriggerEnter(Collider other)
     {

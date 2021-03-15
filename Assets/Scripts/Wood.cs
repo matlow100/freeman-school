@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Wood : MonoBehaviour
 {
-    public Wood wood;
+    public WoodObj wood;
     public CountManager countManager;
 
     void OnTriggerEnter(Collider other)

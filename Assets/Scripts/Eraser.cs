@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Eraser : MonoBehaviour
 {
-    public Eraser eraser;
+    public EraserObj eraser;
     public CountManager countManager;
 
     void OnTriggerEnter(Collider other)
