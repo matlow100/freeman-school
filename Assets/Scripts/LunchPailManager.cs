@@ -8,11 +8,23 @@ public class LunchPailManager : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-
+        if (other.gameObject.CompareTag("LunchPailObj"))
+        {
+            if (GameObject.ReferenceEquals(other.gameObject, lunchPail.gameObject))
+            {
+                // TODO
+            }
+        }
     }
 
     void OnTriggerExit(Collider other)
     {
-
+        if (other.gameObject.CompareTag("LunchPailObj"))
+        {
+            if (GameObject.ReferenceEquals(other.gameObject, lunchPail.gameObject))
+            {
+                // TODO
+            }
+        }
     }
 }

@@ -9,11 +9,23 @@ public class EraserManager : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-
+        if (other.gameObject.CompareTag("EraserObj"))
+        {
+            if (GameObject.ReferenceEquals(other.gameObject, eraser.gameObject))
+            {
+                countManager.IncreaseEraserCount();
+            }
+        }
     }
 
     void OnTriggerExit(Collider other)
     {
-
+        if (other.gameObject.CompareTag("EraserObj"))
+        {
+            if (GameObject.ReferenceEquals(other.gameObject, eraser.gameObject))
+            {
+                countManager.DecreaseEraserCount();
+            }
+        }
     }
 }

@@ -11,30 +11,45 @@ public class CountManager : MonoBehaviour
     public GameObject chalkboardPiece3;
     public GameObject chalkboardPiece4;
     public GameObject chalkboardPiece5;
+    // Add more as needed...
 
     void Start()
     {
-        
+        woodCount = 0;
+        eraserCount = 0;
     }
 
-    void IncreaseWoodCount()
+    public void IncreaseWoodCount()
     {
-
+        woodCount++;
+        Debug.Log(woodCount);
+        if (woodCount >= 2)
+        {
+            // Win condition
+            Debug.Log("All wood transported.");
+        }
     }
 
-    void DecreaseWoodCount()
+    public void DecreaseWoodCount()
     {
-
+        woodCount--;
+        Debug.Log( woodCount);
     }
 
-    void IncreaseEraserCount()
+    public void IncreaseEraserCount()
     {
-
+        eraserCount++;
+        Debug.Log(eraserCount);
+        if (eraserCount >= 5) // Update number if more pieces are added!
+        {
+            // Win condition
+            Debug.Log("Chalkboard successfully cleared.");
+        }
     }
 
-    void DecreaseEraserCount()
+    public void DecreaseEraserCount()
     {
-
-
+        eraserCount--;
+        Debug.Log(eraserCount);
     }
 }

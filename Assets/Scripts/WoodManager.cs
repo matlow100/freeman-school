@@ -13,13 +13,19 @@ public class WoodManager : MonoBehaviour
         {
             if (GameObject.ReferenceEquals(other.gameObject, wood.gameObject))
             {
-                // TODO
+                countManager.IncreaseWoodCount();
             }
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-
+        if (other.gameObject.CompareTag("WoodObj"))
+        {
+            if (GameObject.ReferenceEquals(other.gameObject, wood.gameObject))
+            {
+                countManager.DecreaseWoodCount();
+            }
+        }
     }
 }
