@@ -33,7 +33,7 @@ public class CountManager : MonoBehaviour
     public void DecreaseWoodCount()
     {
         woodCount--;
-        Debug.Log( woodCount);
+        Debug.Log(woodCount);
     }
 
     public void IncreaseEraserCount()

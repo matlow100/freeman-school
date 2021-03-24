@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class WoodManager : MonoBehaviour
 {
-    public Wood wood;
+    public Wood wood1;
+    public Wood wood2;
     public CountManager countManager;
 
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("WoodObj"))
         {
-            if (GameObject.ReferenceEquals(other.gameObject, wood.gameObject))
+            if ((GameObject.ReferenceEquals(other.gameObject, wood1.gameObject)) || (GameObject.ReferenceEquals(other.gameObject, wood2.gameObject)))
             {
                 countManager.IncreaseWoodCount();
             }
@@ -22,7 +23,7 @@ public class WoodManager : MonoBehaviour
     {
         if (other.gameObject.CompareTag("WoodObj"))
         {
-            if (GameObject.ReferenceEquals(other.gameObject, wood.gameObject))
+            if ((GameObject.ReferenceEquals(other.gameObject, wood1.gameObject)) || (GameObject.ReferenceEquals(other.gameObject, wood2.gameObject)))
             {
                 countManager.DecreaseWoodCount();
             }
