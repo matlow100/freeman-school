@@ -12,6 +12,7 @@ public class LunchPailManager : MonoBehaviour
         {
             if (GameObject.ReferenceEquals(other.gameObject, lunchPail.gameObject))
             {
+                Debug.Log("The lunch pail has left the building.");
                 // TODO
             }
         }
