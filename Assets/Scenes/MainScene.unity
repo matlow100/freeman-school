@@ -230,6 +230,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 53505854}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &155267321 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 660646088607695007, guid: 1358d7181fa20c14fb688ed7b38d43d9,
+    type: 3}
+  m_PrefabInstance: {fileID: 829597907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &155267322
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155267321}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 2.0000005, z: 1.0000006}
+  m_Center: {x: -0.0000037550926, y: 0.0000038146973, z: -0.00000008940699}
 --- !u!1001 &157972347
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2204,6 +2223,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wood2
       objectReference: {fileID: 0}
+    - target: {fileID: 2243758236473875122, guid: 1358d7181fa20c14fb688ed7b38d43d9,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 726bc36de4653404597d7de433b0cc7d, type: 2}
     - target: {fileID: 3530630237607431264, guid: 1358d7181fa20c14fb688ed7b38d43d9,
         type: 3}
       propertyPath: m_RootOrder
@@ -2264,7 +2288,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -13.679001
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2142886261941246531, guid: 1358d7181fa20c14fb688ed7b38d43d9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1358d7181fa20c14fb688ed7b38d43d9, type: 3}
 --- !u!114 &829597908 stripped
 MonoBehaviour:
@@ -2272,7 +2297,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 829597907}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 155267321}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43f7e33f6e6be1940a85882a244e467d, type: 3}
@@ -2940,6 +2965,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243182693}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1272131790 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 660646088607695007, guid: 1358d7181fa20c14fb688ed7b38d43d9,
+    type: 3}
+  m_PrefabInstance: {fileID: 6928570956009290993}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1272131791
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272131790}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.9999999, z: 1.0000001}
+  m_Center: {x: -0.0000037550926, y: 0, z: -0.0000039041042}
 --- !u!1001 &1303696716
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4575,6 +4619,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wood1
       objectReference: {fileID: 0}
+    - target: {fileID: 2243758236473875122, guid: 1358d7181fa20c14fb688ed7b38d43d9,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 726bc36de4653404597d7de433b0cc7d, type: 2}
     - target: {fileID: 3530630237607431264, guid: 1358d7181fa20c14fb688ed7b38d43d9,
         type: 3}
       propertyPath: m_RootOrder
@@ -4635,7 +4684,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2142886261941246531, guid: 1358d7181fa20c14fb688ed7b38d43d9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1358d7181fa20c14fb688ed7b38d43d9, type: 3}
 --- !u!114 &6928570956009290994 stripped
 MonoBehaviour:
@@ -4643,7 +4693,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 6928570956009290993}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1272131790}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43f7e33f6e6be1940a85882a244e467d, type: 3}
