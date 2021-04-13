@@ -14,12 +14,18 @@ public class playsound : MonoBehaviour
     {
         audio = GetComponent<AudioSource>();
     }
-    void OnTriggerEnter()
+    void OnTriggerEnter(Collider other)
     {
-        if(!alreadyPlayed)
+        Debug.Log("entered trigger");
+        Debug.Log(other.gameObject.tag);
+        Debug.Log(other.gameObject);
+        if (other.gameObject.CompareTag("Player"))
         {
-            audio.PlayOneShot(SoundtoPlay, Volume);
-            alreadyPlayed = true;
+            if (!alreadyPlayed)
+            {
+                audio.PlayOneShot(SoundtoPlay, Volume);
+                alreadyPlayed = true;
+            }
         }
     }
 }
