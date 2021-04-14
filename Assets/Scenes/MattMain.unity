@@ -1495,8 +1495,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3470843adfc9974796fb3f91bf5b8c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stoveWood1: {fileID: 0}
-  stoveWood2: {fileID: 0}
+  stoveWood1: {fileID: 1251313506}
+  stoveWood2: {fileID: 2117038436}
 --- !u!4 &594939273
 Transform:
   m_ObjectHideFlags: 0
