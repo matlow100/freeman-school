@@ -26,8 +26,8 @@ public class CountManager : MonoBehaviour
         else if (woodCount >= 2)
         {
             stoveWood2.SetActive(true);
-            // Win condition
             Debug.Log("All wood transported.");
+            // Win condition for transported wood
         }
     }
 
@@ -37,8 +37,8 @@ public class CountManager : MonoBehaviour
         Debug.Log(eraserCount);
         if (eraserCount >= 4)
         {
-            // Win condition
             Debug.Log("Chalkboard successfully cleared.");
+            // Win condition for chalkboard cleared
         }
     }
 }

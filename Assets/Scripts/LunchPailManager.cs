@@ -15,7 +15,7 @@ public class LunchPailManager : MonoBehaviour
             {
                 activated = true;
                 Debug.Log("The lunch pail has left the building.");
-                // TODO
+                // Win condition for lunch pail moved outside
             }
         }
     }

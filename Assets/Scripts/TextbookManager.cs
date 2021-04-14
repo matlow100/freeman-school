@@ -13,9 +13,9 @@ public class TextbookManager : MonoBehaviour
         {
             if (!activated)
             {
-                // TODO
-                Debug.Log("Textbook picked up.");
                 activated = true;
+                Debug.Log("Textbook picked up.");
+                // Win condition for textbook picked up
             }
         }
     }
