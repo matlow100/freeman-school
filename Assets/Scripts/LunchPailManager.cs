@@ -5,13 +5,18 @@ using UnityEngine;
 public class LunchPailManager : MonoBehaviour
 {
     public LunchPail lunchPail;
+    bool activated = false;
 
     void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("LunchPailObj"))
         {
-            Debug.Log("The lunch pail has left the building.");
-            // TODO
+            if (!activated)
+            {
+                Debug.Log("The lunch pail has left the building.");
+                activated = true;
+                // TODO
+            }
         }
     }
 }
