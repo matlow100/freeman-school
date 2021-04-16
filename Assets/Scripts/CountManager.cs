@@ -6,10 +6,8 @@ public class CountManager : MonoBehaviour
 {
     private int woodCount;
     private int eraserCount;
-    public GameObject chalkboardPiece1;
-    public GameObject chalkboardPiece2;
-    public GameObject chalkboardPiece3;
-    public GameObject chalkboardPiece4;
+    public GameObject stoveWood1;
+    public GameObject stoveWood2;
 
     void Start()
     {
@@ -21,10 +19,15 @@ public class CountManager : MonoBehaviour
     {
         woodCount++;
         Debug.Log(woodCount);
-        if (woodCount >= 2)
+        if (woodCount == 1)
         {
-            // Win condition
+            stoveWood1.SetActive(true);
+        }
+        else if (woodCount >= 2)
+        {
+            stoveWood2.SetActive(true);
             Debug.Log("All wood transported.");
+            // Win condition for transported wood
         }
     }
 
@@ -34,8 +37,8 @@ public class CountManager : MonoBehaviour
         Debug.Log(eraserCount);
         if (eraserCount >= 4)
         {
-            // Win condition
             Debug.Log("Chalkboard successfully cleared.");
+            // Win condition for chalkboard cleared
         }
     }
 }

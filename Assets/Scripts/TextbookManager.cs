@@ -5,25 +5,17 @@ using UnityEngine;
 public class TextbookManager : MonoBehaviour
 {
     public Textbook textbook;
+    bool activated = false;
 
-    void OnTriggerEnter(Collider other)
+    void OnCollisionExit(Collision other)
     {
         if (other.gameObject.CompareTag("TextbookObj"))
         {
-            if (GameObject.ReferenceEquals(other.gameObject, textbook.gameObject))
+            if (!activated)
             {
-                // TODO
-            }
-        }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.CompareTag("TextbookObj"))
-        {
-            if (GameObject.ReferenceEquals(other.gameObject, textbook.gameObject))
-            {
-                // TODO
+                activated = true;
+                Debug.Log("Textbook picked up.");
+                // Win condition for textbook picked up
             }
         }
     }
