@@ -22,16 +22,11 @@ public class CountManager : MonoBehaviour
     public void IncreaseWoodCount()
     {
         woodCount++;
-        Debug.Log(woodCount);
-        if (woodCount == 1)
+        if (woodCount > 0)
         {
             stoveWood1.SetActive(true);
-        }
-        else if (woodCount >= 2)
-        {
-            // Win condition
             stoveWood2.SetActive(true);
-            Debug.Log("All wood transported.");
+            Debug.Log("Wood transported.");
         }
     }
 
