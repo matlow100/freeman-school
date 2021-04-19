@@ -10,6 +10,8 @@ public class CountManager : MonoBehaviour
     public GameObject chalkboardPiece2;
     public GameObject chalkboardPiece3;
     public GameObject chalkboardPiece4;
+    public GameObject stoveWood1;
+    public GameObject stoveWood2;
 
     void Start()
     {
@@ -20,11 +22,11 @@ public class CountManager : MonoBehaviour
     public void IncreaseWoodCount()
     {
         woodCount++;
-        Debug.Log(woodCount);
-        if (woodCount >= 2)
+        if (woodCount > 0)
         {
-            // Win condition
-            Debug.Log("All wood transported.");
+            stoveWood1.SetActive(true);
+            stoveWood2.SetActive(true);
+            Debug.Log("Wood transported.");
         }
     }
 
