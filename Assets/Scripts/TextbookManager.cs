@@ -6,6 +6,8 @@ public class TextbookManager : MonoBehaviour
 {
     public Textbook textbook;
     bool activated = false;
+    public GameObject deskTrigger;
+
 
     void OnTriggerEnter(Collider other)
     {
@@ -26,6 +28,7 @@ public class TextbookManager : MonoBehaviour
             {
                 activated = true;
                 Debug.Log("Textbook picked up");
+                deskTrigger.SetActive(true);
             }
         }
     }

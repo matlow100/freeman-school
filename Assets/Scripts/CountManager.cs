@@ -12,6 +12,9 @@ public class CountManager : MonoBehaviour
     public GameObject chalkboardPiece4;
     public GameObject stoveWood1;
     public GameObject stoveWood2;
+    public GameObject eraserTrigger;
+    public GameObject bucketTrigger;
+
 
     void Start()
     {
@@ -36,7 +39,8 @@ public class CountManager : MonoBehaviour
         Debug.Log(eraserCount);
         if (eraserCount >= 4)
         {
-            // Win condition
+            eraserTrigger.SetActive(true);
+            bucketTrigger.SetActive(true);
             Debug.Log("Chalkboard successfully cleared.");
         }
     }

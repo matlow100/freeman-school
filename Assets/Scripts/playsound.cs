@@ -7,7 +7,7 @@ public class playsound : MonoBehaviour
     public AudioClip SoundtoPlay;
     public float Volume;
     AudioSource audio;
-    public bool alreadyPlayed = false;
+    bool alreadyPlayed = false;
 
     // Start is called before the first frame update
     void Start()
