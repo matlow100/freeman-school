@@ -3417,8 +3417,18 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: acd102ed1cb067842bfa861d8b3ff1e8, type: 3}
     - target: {fileID: 546504455148392654, guid: adb792120eabbb9498e205e042465f70,
         type: 3}
+      propertyPath: BypassEffects
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 546504455148392654, guid: adb792120eabbb9498e205e042465f70,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 546504455148392654, guid: adb792120eabbb9498e205e042465f70,
+        type: 3}
       propertyPath: BypassListenerEffects
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb792120eabbb9498e205e042465f70, type: 3}
