@@ -14,6 +14,10 @@ public class CountManager : MonoBehaviour
     public GameObject stoveWood2;
     public GameObject eraserTrigger;
     public GameObject bucketTrigger;
+    public GameObject TLTrigger;
+    public GameObject TRTrigger;
+    public GameObject BLTrigger;
+    public GameObject BRTrigger;
 
 
     void Start()
@@ -37,8 +41,21 @@ public class CountManager : MonoBehaviour
     {
         eraserCount++;
         Debug.Log(eraserCount);
-        if (eraserCount >= 4)
+        if (eraserCount == 1)
         {
+            TLTrigger.SetActive(true);
+        }
+        else if (eraserCount == 2)
+        {
+            TRTrigger.SetActive(true);
+        }
+        else if (eraserCount == 3)
+        {
+            BLTrigger.SetActive(true);
+        }
+        else if (eraserCount >= 4)
+        {
+            BRTrigger.SetActive(true);
             eraserTrigger.SetActive(true);
             bucketTrigger.SetActive(true);
             Debug.Log("Chalkboard successfully cleared.");
