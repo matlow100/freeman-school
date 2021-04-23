@@ -13,7 +13,7 @@ public class StoveTrigger : MonoBehaviour
         {
             stoveTrigger.SetActive(true);
             activated = true;
-            Debug.Log("The wood has left the pile");
+            Debug.Log("Stove trigger activated");
         }
     }
 }
