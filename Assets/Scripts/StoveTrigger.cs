@@ -11,9 +11,12 @@ public class StoveTrigger : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            stoveTrigger.SetActive(true);
-            activated = true;
-            Debug.Log("Stove trigger activated");
+            if (!activated)
+            {
+                stoveTrigger.SetActive(true);
+                activated = true;
+                Debug.Log("Stove trigger activated");
+            }
         }
     }
 }

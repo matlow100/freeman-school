@@ -10,6 +10,7 @@ TagManager:
   - TextbookObj
   - LunchPailObj
   - EraserObj
+  - FireObj
   layers:
   - Default
   - TransparentFX

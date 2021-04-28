@@ -6,7 +6,7 @@ public class WoodManager : MonoBehaviour
 {
     public Wood wood1;
     public Wood wood2;
-    public Wood fire;
+    public Fire fire;
     public CountManager countManager;
 
     void OnTriggerEnter(Collider other)
@@ -16,9 +16,9 @@ public class WoodManager : MonoBehaviour
             if ((GameObject.ReferenceEquals(other.gameObject, wood1.gameObject)) || (GameObject.ReferenceEquals(other.gameObject, wood2.gameObject)))
             {
                 countManager.IncreaseWoodCount();
-                // wood1.gameObject.SetActive(false);
-                // wood2.gameObject.SetActive(false);
-                //fire.gameObject.setActive(false);
+                wood1.gameObject.SetActive(false);
+                wood2.gameObject.SetActive(false);
+                fire.gameObject.SetActive(true);
             }
         }
     }
