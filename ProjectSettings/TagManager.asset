@@ -11,6 +11,7 @@ TagManager:
   - LunchPailObj
   - EraserObj
   - FireObj
+  - ChalkObj
   layers:
   - Default
   - TransparentFX
