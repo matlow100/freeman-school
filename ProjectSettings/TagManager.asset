@@ -12,6 +12,7 @@ TagManager:
   - EraserObj
   - FireObj
   - ChalkObj
+  - AppleObj
   layers:
   - Default
   - TransparentFX
