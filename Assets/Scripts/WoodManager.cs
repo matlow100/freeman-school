@@ -15,8 +15,8 @@ public class WoodManager : MonoBehaviour
             if ((GameObject.ReferenceEquals(other.gameObject, wood1.gameObject)) || (GameObject.ReferenceEquals(other.gameObject, wood2.gameObject)))
             {
                 countManager.IncreaseWoodCount();
-                // wood1.gameObject.SetActive(false);
-                // wood2.gameObject.SetActive(false);
+                wood1.gameObject.SetActive(false);
+                wood2.gameObject.SetActive(false);
             }
         }
     }
