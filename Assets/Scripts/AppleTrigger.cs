@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AppleTrigger : MonoBehaviour
 {
-    // TODO
+    public Apple apple;
+    public Text text;
     bool activated = false;
 
     void OnCollisionEnter(Collision other)
@@ -13,9 +15,9 @@ public class AppleTrigger : MonoBehaviour
         {
             if (!activated)
             {
-                // TODO
-                Debug.Log("Apple placed");
+                Debug.Log("Apple placed.");
                 activated = true;
+                text.gameObject.SetActive(true);
             }
         }
     }
